@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	
+		<title> Fizzy Cam </title>
+		
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+		<link href="res/style.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="../res/styles.css" type="text/css">
+
+	</head>
+
+	<body data-twttr-rendered="true">
+
+		<div id="nav">
+			<a href="../balls/index.html">Perspective</a>
+			<a href="../type/index.html">Type</a>
+			<a href="../fizz/index.html">Particles</a>
+		</div>	
+
+		<video class="video" autoplay="true" src="blob:http%3A//tholman.com/538c4117-8647-4a55-a813-4163ad90d3cf"></video>
+		<div class="info text hidden">
+			<b>Fizzy-Cam</b> is a tech mashup, using webgl with <a href="http://threejs.org/">three.js</a>, custom webgl <a href="http://www.khronos.org/registry/webgl/specs/1.0/#5.8">shaders</a>, <a href="http://www.webrtc.org/">WebRTC</a> and headtracking using <a href="https://github.com/auduno/headtrackr/">headtrackr</a>. Made by <a href="http://tholman.com/">Tim Holman</a> (<a href="http://twitter.com/twholman">@twholman</a>)
+			<p class="get-started"> To get started, you'll need to 'allow' webcam access on your browser. </p>
+			
+		</div>
+		<div class="open-info text">
+			?
+		</div>
+
+		<div class="more-experiments text">
+			<a href="http://tholman.com/">‹</a>
+		</div>
+
+
+		<script src="res/three.js"></script>
+		<script src="res/headtrackr.js"></script>
+		<script src="res/stats.js"></script>
+		<script type="x-shader/x-vertex" id="vertexshader">
+			attribute vec3 customColor;
+			uniform sampler2D texture;
+			uniform float amplitude;
+			attribute float size;
+			uniform float height;
+			uniform float width;
+
+			varying vec4 vColor;
+
+			void main() {
+
+				vec4 mvPosition = modelViewMatrix  * vec4( position, 1.0 );
+				gl_PointSize = size * ( 35.0 / length( mvPosition.xyz ) );
+
+				gl_Position = projectionMatrix * mvPosition;
+
+				vec2 screenPos = gl_Position.xy / gl_Position.w;
+				vec2 realPos = ( screenPos + 1.0 ) / 2.0;
+				
+				vec4 colorData = texture2D(texture, vec2( realPos.x, realPos.y));
+				vColor = colorData;
+
+			}
+		</script>
+		<script type="x-shader/x-fragment" id="fragmentshader">
+
+			uniform sampler2D texture;
+			uniform float height;
+			uniform float width;
+			uniform vec3 color;
+
+			varying vec4 vColor;
+
+			const vec3 fogColor = vec3( 0.0, 0.0, 0.0 );
+			const float fogDensity = 0.0008;
+			const float LOG2 = 1.442695;
+			const float fogNear = 100.0;
+			const float fogFar = 700.0;
+
+			void main() {
+				// 1: Apply Color From texture in Vertex Shader
+				gl_FragColor = vColor;
+
+				// 2: Apply color from texture per pixel
+				// vec2 resolution = vec2( width, height );
+				// vec2 positionData = ( gl_FragCoord.xy / resolution.xy );
+    			// vec4 colorData = texture2D(texture, positionData);
+				// gl_FragColor = colorData;
+
+				// Apply Foginess
+				float depth = gl_FragCoord.z / gl_FragCoord.w;
+
+				float fogFactor = exp2( - fogDensity * fogDensity * depth * depth * LOG2 );
+				fogFactor = 1.0 - clamp( fogFactor, 0.0, 1.0 );
+
+				gl_FragColor = mix( gl_FragColor, vec4( fogColor, gl_FragColor.w ), fogFactor );
+				
+			}
+		</script>
+
+		<script src="res/fizzycam.js"></script>
+		
+		
+		
+	
+
+<div><canvas style="width: 1680px; height: 861px;" height="861" width="1680"></canvas></div></body></html>

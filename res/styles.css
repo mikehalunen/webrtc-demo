@@ -1,0 +1,25 @@
+body {
+	
+				/*background-color: #ffffff;*/
+		    color: #4A525A;
+		    font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+		    overflow: hidden;
+			
+}
+
+#nav {
+		position: absolute;
+		right: 0;
+		top: 0;
+		z-index: 1000;
+}
+
+#nav a {
+		border: 1px solid #999999;
+    color: #999999;
+    display: inline-block;
+    margin: 10px 5px;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #ffffff;
+}
