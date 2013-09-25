@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"ba",
+				"background-position"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"b",
+				"background"
+			],
+			[
 				"bl",
 				"blue"
 			],
@@ -156,10 +168,6 @@
 				"height  (function)"
 			],
 			[
-				"b",
-				"border"
-			],
-			[
 				"paral",
 				"parallax"
 			],
@@ -174,10 +182,6 @@
 			[
 				"m",
 				"margin"
-			],
-			[
-				"ba",
-				"background-color"
 			],
 			[
 				"sta",
@@ -234,10 +238,6 @@
 			[
 				"col",
 				"console"
-			],
-			[
-				"text",
-				"text-decoration"
 			],
 			[
 				"fa",
@@ -327,40 +327,6 @@
 	},
 	"buffers":
 	[
-		{
-			"contents": "Searching 40 files for \"index_files\"\n\n/Users/mhalunen/work/projects/webrtc-demo/balls/sciencefair.sublime-workspace:\n  654  		[\n  655  			\"faceTrackRectangle\",\n  656: 			\"./index_files\",\n  657  			\"./type\",\n  658  			\"/inde_files\",\n\n/Users/mhalunen/work/projects/webrtc-demo/fizz/index.html:\n    8  		<meta name=\"viewport\" content=\"width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0\">\n    9  \n   10: 		<link href=\"index_files/style.css\" rel=\"stylesheet\" type=\"text/css\">\n   11  \n   12  	</head>\n   ..\n   28  \n   29  \n   30: 		<script src=\"index_files/three.js\"></script>\n   31: 		<script src=\"index_files/headtrackr.js\"></script>\n   32: 		<script src=\"index_files/stats.js\"></script>\n   33  		<script type=\"x-shader/x-vertex\" id=\"vertexshader\">\n   34  			attribute vec3 customColor;\n   ..\n   92  		</script>\n   93  \n   94: 		<script src=\"index_files/fizzycam.js\"></script>\n   95  		\n   96  		\n\n6 matches across 2 files\n\n\nSearching 40 files for \"screen_test\"\n\n0 matches across 0 files\n",
-			"settings":
-			{
-				"buffer_size": 1008,
-				"line_ending": "Unix",
-				"name": "Find Results",
-				"scratch": true
-			}
-		},
-		{
-			"file": "/Users/mhalunen/work/projects/webrtc-demo/fizz/index.html",
-			"settings":
-			{
-				"buffer_size": 3169,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/mhalunen/work/projects/webrtc-demo/fizz/res/fizzycam.js",
-			"settings":
-			{
-				"buffer_size": 7949,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/mhalunen/work/projects/webrtc-demo/fizz/res/style.css",
-			"settings":
-			{
-				"buffer_size": 1347,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -414,16 +380,22 @@
 	},
 	"file_history":
 	[
-		"/Users/mhalunen/work/projects/webrtc-demo/fizz/res/three.js",
-		"/Users/mhalunen/work/projects/webrtc-demo/type/res/js.js",
-		"/Users/mhalunen/work/projects/webrtc-demo/type/index.html",
-		"/Users/mhalunen/work/projects/webrtc-demo/type/res/style.css",
+		"/Users/mhalunen/work/projects/webrtc-demo/balls/index.html",
 		"/Users/mhalunen/work/projects/webrtc-demo/fizz/index.html",
+		"/Users/mhalunen/work/projects/webrtc-demo/type/index.html",
+		"/Users/mhalunen/work/projects/webrtc-demo/type/res/headtrackr.js",
+		"/Users/mhalunen/work/projects/webrtc-demo/type/res/scripts.js",
+		"/Users/mhalunen/work/projects/webrtc-demo/type/res/style.css",
+		"/Users/mhalunen/work/projects/webrtc-demo/type/res/js.js",
+		"/Users/mhalunen/work/projects/webrtc-demo/res/styles.css",
+		"/Users/mhalunen/work/projects/webrtc-demo/balls/res/headtrackr.js",
+		"/Users/mhalunen/work/projects/webrtc-demo/fizz/res/fizzycam.js",
+		"/Users/mhalunen/work/projects/webrtc-demo/fizz/res/style.css",
+		"/Users/mhalunen/work/projects/webrtc-demo/fizz/res/three.js",
 		"/Users/mhalunen/Desktop/tmp/Fizzy Cam.html",
 		"/Users/mhalunen/Desktop/tmp/res/fizzycam.js",
 		"/Users/mhalunen/Desktop/tmp/res/headtrackr.min.js",
 		"/Users/mhalunen/work/projects/webrtc-demo/fizz/Fizzy Cam.html",
-		"/Users/mhalunen/work/projects/webrtc-demo/balls/index.html",
 		"/Users/mhalunen/work/projects/dtas_libs_js_grunt/config.rb",
 		"/Users/mhalunen/work/projects/dtas_libs_js_grunt/res/css/compiled/styles.css",
 		"/Users/mhalunen/work/projects/dtas_libs_js_grunt/res/css/scss/_wrapper.scss",
@@ -535,13 +507,7 @@
 		"/Users/mhalunen/work/flag/edhub/bac-education/src/main/webapp/res/js/components/video/video.ui.incomplete.js",
 		"/Users/mhalunen/work/flag/edhub/bac-education/src/main/webapp/res/js/components/video/video.ui.base.js",
 		"/Users/mhalunen/work/flag/edhub/bac-education/src/main/webapp/WEB-INF/views/components/global/footer.jsp",
-		"/Users/mhalunen/work/flag/edhub/bac-education/src/main/webapp/res/css/scss/components/home/card/khan.scss",
-		"/Users/mhalunen/work/flag/edhub/bac-education/src/main/webapp/res/css/scss/components/global/khan.scss",
-		"/Users/mhalunen/work/flag/edhub/bac-education/src/main/webapp/WEB-INF/views/components/global/vote.jsp",
-		"/Users/mhalunen/work/flag/edhub/bac-education/src/main/webapp/WEB-INF/views/khan.jsp",
-		"/Users/mhalunen/work/flag/edhub/bac-education/src/main/webapp/res/css/scss/components/global/modal.scss",
-		"/Users/mhalunen/.sublime/history/Users/mhalunen/work/flag/edhub/bac-education/src/main/webapp/res/css/ie/2013-03-29_14.41.35.ie.css",
-		"/Users/mhalunen/.sublime/history/Users/mhalunen/work/flag/edhub/bac-education/src/main/webapp/res/css/ie/2013-04-01_21.07.58.ie.css"
+		"/Users/mhalunen/work/flag/edhub/bac-education/src/main/webapp/res/css/scss/components/home/card/khan.scss"
 	],
 	"find":
 	{
@@ -663,6 +629,21 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"detectionInterval",
+			"interval",
+			"fontSize",
+			"start()",
+			"messageDiv",
+			"move ",
+			"move",
+			"face",
+			"tracking face",
+			"tracking",
+			"detecting",
+			"tracking",
+			"tracking face",
+			"found",
+			"50px",
 			"index_files",
 			"screen_test",
 			"index_files",
@@ -775,22 +756,7 @@
 			"footer_links",
 			"black",
 			"eh1",
-			"h2",
-			"anchor",
-			"khan",
-			"factoid",
-			"anchor",
-			"arrows",
-			"arrow",
-			"parallax",
-			"contextSwitch",
-			"parallax",
-			"anchor",
-			"video-description-container",
-			"video-description",
-			"summary",
-			"Patience.",
-			"Time value of Money"
+			"h2"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -838,565 +804,13 @@
 	"groups":
 	[
 		{
-			"selected": 3,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"settings":
-					{
-						"buffer_size": 1008,
-						"regions":
-						{
-							"match":
-							{
-								"flags": 112,
-								"regions":
-								[
-									[
-										173,
-										184
-									],
-									[
-										438,
-										449
-									],
-									[
-										563,
-										574
-									],
-									[
-										617,
-										628
-									],
-									[
-										676,
-										687
-									],
-									[
-										862,
-										873
-									]
-								],
-								"scope": ""
-							}
-						},
-						"selection":
-						[
-							[
-								945,
-								945
-							]
-						],
-						"settings":
-						{
-							"codeintel": true,
-							"codeintel_config":
-							{
-								"JavaScript":
-								{
-									"codeintel_max_recursive_dir_depth": 2.0,
-									"codeintel_scan_files_in_project": false,
-									"javascriptExtraPaths":
-									[
-									]
-								},
-								"PHP":
-								{
-									"codeintel_max_recursive_dir_depth": 5.0,
-									"codeintel_scan_files_in_project": false,
-									"phpExtraPaths":
-									[
-									]
-								},
-								"Python":
-								{
-									"env":
-									{
-									}
-								}
-							},
-							"codeintel_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_live": true,
-							"codeintel_live_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_max_recursive_dir_depth": 10.0,
-							"codeintel_scan_exclude_dir":
-							{
-								"JavaScript":
-								[
-									"/build/",
-									"/min/"
-								]
-							},
-							"codeintel_scan_files_in_project": true,
-							"codeintel_selected_catalogs":
-							[
-								"PyWin32",
-								"jQuery",
-								"Rails"
-							],
-							"codeintel_snippets": true,
-							"codeintel_syntax_map":
-							{
-								"Python Django": "Python"
-							},
-							"detect_indentation": false,
-							"output_tag": 2,
-							"result_base_dir": "",
-							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
-							"result_line_regex": "^ +([0-9]+):",
-							"scroll_past_end": true,
-							"sublime_auto_complete": true,
-							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 480.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/Users/mhalunen/work/projects/webrtc-demo/fizz/index.html",
-					"settings":
-					{
-						"buffer_size": 3169,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								482,
-								482
-							]
-						],
-						"settings":
-						{
-							"codeintel": true,
-							"codeintel_config":
-							{
-								"JavaScript":
-								{
-									"codeintel_max_recursive_dir_depth": 2.0,
-									"codeintel_scan_files_in_project": false,
-									"javascriptExtraPaths":
-									[
-									]
-								},
-								"PHP":
-								{
-									"codeintel_max_recursive_dir_depth": 5.0,
-									"codeintel_scan_files_in_project": false,
-									"phpExtraPaths":
-									[
-									]
-								},
-								"Python":
-								{
-									"env":
-									{
-									}
-								}
-							},
-							"codeintel_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_live": true,
-							"codeintel_live_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_max_recursive_dir_depth": 10.0,
-							"codeintel_scan_exclude_dir":
-							{
-								"JavaScript":
-								[
-									"/build/",
-									"/min/"
-								]
-							},
-							"codeintel_scan_files_in_project": true,
-							"codeintel_selected_catalogs":
-							[
-								"PyWin32",
-								"jQuery",
-								"Rails"
-							],
-							"codeintel_snippets": true,
-							"codeintel_syntax_map":
-							{
-								"Python Django": "Python"
-							},
-							"sublime_auto_complete": true,
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 584.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/Users/mhalunen/work/projects/webrtc-demo/fizz/res/fizzycam.js",
-					"settings":
-					{
-						"buffer_size": 7949,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1502,
-								1502
-							]
-						],
-						"settings":
-						{
-							"codeintel": true,
-							"codeintel_config":
-							{
-								"JavaScript":
-								{
-									"codeintel_max_recursive_dir_depth": 2.0,
-									"codeintel_scan_files_in_project": false,
-									"javascriptExtraPaths":
-									[
-									]
-								},
-								"PHP":
-								{
-									"codeintel_max_recursive_dir_depth": 5.0,
-									"codeintel_scan_files_in_project": false,
-									"phpExtraPaths":
-									[
-									]
-								},
-								"Python":
-								{
-									"env":
-									{
-									}
-								}
-							},
-							"codeintel_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_live": true,
-							"codeintel_live_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_max_recursive_dir_depth": 10.0,
-							"codeintel_scan_exclude_dir":
-							{
-								"JavaScript":
-								[
-									"/build/",
-									"/min/"
-								]
-							},
-							"codeintel_scan_files_in_project": true,
-							"codeintel_selected_catalogs":
-							[
-								"PyWin32",
-								"jQuery",
-								"Rails"
-							],
-							"codeintel_snippets": true,
-							"codeintel_syntax_map":
-							{
-								"Python Django": "Python"
-							},
-							"sublime_auto_complete": true,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 431.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "/Users/mhalunen/work/projects/webrtc-demo/fizz/res/style.css",
-					"settings":
-					{
-						"buffer_size": 1347,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								203,
-								203
-							]
-						],
-						"settings":
-						{
-							"codeintel": true,
-							"codeintel_config":
-							{
-								"JavaScript":
-								{
-									"codeintel_max_recursive_dir_depth": 2.0,
-									"codeintel_scan_files_in_project": false,
-									"javascriptExtraPaths":
-									[
-									]
-								},
-								"PHP":
-								{
-									"codeintel_max_recursive_dir_depth": 5.0,
-									"codeintel_scan_files_in_project": false,
-									"phpExtraPaths":
-									[
-									]
-								},
-								"Python":
-								{
-									"env":
-									{
-									}
-								}
-							},
-							"codeintel_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_live": true,
-							"codeintel_live_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_max_recursive_dir_depth": 10.0,
-							"codeintel_scan_exclude_dir":
-							{
-								"JavaScript":
-								[
-									"/build/",
-									"/min/"
-								]
-							},
-							"codeintel_scan_files_in_project": true,
-							"codeintel_selected_catalogs":
-							[
-								"PyWin32",
-								"jQuery",
-								"Rails"
-							],
-							"codeintel_snippets": true,
-							"codeintel_syntax_map":
-							{
-								"Python Django": "Python"
-							},
-							"sublime_auto_complete": true,
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
+			]
+		},
+		{
+			"sheets":
+			[
 			]
 		}
 	],
@@ -1417,11 +831,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.5,
 			1.0
 		],
 		"rows":

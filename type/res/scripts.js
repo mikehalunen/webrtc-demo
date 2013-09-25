@@ -46,9 +46,13 @@ document.addEventListener("headtrackrStatus", function(event) {
 
 // the face tracking setup
 
-var htracker = new headtrackr.Tracker({altVideo : {ogv : "./media/capture5.ogv", mp4 : "./media/capture5.mp4"}, calcAngles : true, ui : false, headPosition : false, debug : debugOverlay});
+// var htracker = new headtrackr.Tracker({altVideo : {ogv : "./media/capture5.ogv", mp4 : "./media/capture5.mp4"}, calcAngles : true, ui : false, headPosition : false, debug : debugOverlay});
+//     htracker.init(videoInput, canvasInput);
+//     htracker.start();
+
+var htracker = new headtrackr.Tracker({altVideo : {ogv : "./media/capture5.ogv", mp4 : "./media/capture5.mp4"}, calcAngles : true, ui : false, headPosition : false});
     htracker.init(videoInput, canvasInput);
-    htracker.start();
+    htracker.start();    
 
 
 function faceTrackRectangle(ev) {
@@ -93,7 +97,7 @@ function fontSize(ev) {
     
     var faceWidth   = ev.width,
         videoWidth  = videoInput.width,
-        imageWidth = faceWidth/videoWidth*7*100,
+        imageWidth = faceWidth/videoWidth*6*100,
         face2canvasRatio = videoWidth/faceWidth;
 
 
@@ -103,7 +107,9 @@ function fontSize(ev) {
 
     rootSize = Math.round(face2canvasRatio*10)/10 - 1.5 + 10 + 'px';  
     // root.style.fontSize = rootSize;
-    i.style.backgroundSize = imageWidth+"%";
+    if (imageWidth > 100){
+        i.style.backgroundSize = imageWidth+"%";
+    }
     
 	//document.getElementById('calc-messages').innerHTML = 'Width: ' + faceWidth + '<br /> ratio: ' + face2canvasRatio + '<br /> Root size: ' + rootSize;
 	//document.getElementById('font-size').innerHTML = document.defaultView.getComputedStyle(document.getElementById('first-paragraph'),null).getPropertyValue('font-size');

@@ -10,17 +10,30 @@
 	<body>
 
 	<div id="nav">
-		<a href="../balls/index.html">Perspective</a>
-		<a href="../type/index.html">Type</a>
-		<a href="../fizz/index.html">Particles</a>
+		<a href="../type/index.html">Zoom</a>
+    <a href="../balls/index.html">3D Perspective</a>
+    <a href="../fizz/index.html">Particles</a>
 	</div>	
 
 		<script src="res/Three.js"></script>
 		
 		<script src="res/headtrackr.js"></script>
-		
-		<canvas id="compare" width="320" height="240" style="display:none"></canvas>
-		<video id="vid" autoplay="" loop="" src="blob:http%3A//auduno.github.io/c61b4e86-5b64-454f-b7e0-48956e772399" height="240" style="position: absolute; top: 0px; z-index: 100001; display: block;"></video>
+
+		<div id="dev-info">    
+
+    <div id="canvas">
+      <canvas id="compare" width="320" height="240" style="display:none"></canvas> 
+      <video id="vid" autoplay="" loop="" width="320" height="240" src=""></video> 
+      <canvas id="overlay" width="320" height="240"></canvas> 
+      <!-- <canvas id="debug" width="320" height="240"></canvas>  -->
+    </div>
+
+    <div id="console">
+      <p id="support-message"></p> 
+      <p>Status : <span id="headtracker-message"></span></p> 
+   </div>
+
+ </div>
 
 		<script>
 			// 3d model setup
@@ -160,6 +173,30 @@
 			// stats.domElement.style.top = '0px';
 			// document.body.appendChild( stats.domElement );
 			
+			statusMessages = {
+				"whitebalance" : "checking for stability of camera whitebalance",
+				"detecting" : "Detecting face",
+				"hints" : "Hmm. Detecting the face is taking a long time",
+				"redetecting" : "Lost track of face, redetecting",
+				"lost" : "Lost track of face",
+				"found" : "Tracking face"
+			};
+
+			supportMessages = {
+				"no getUserMedia" : "Unfortunately, <a href='http://dev.w3.org/2011/webrtc/editor/getusermedia.html'>getUserMedia</a> is not supported in your browser. Try <a href='http://www.opera.com/browser/'>downloading Opera 12</a> or <a href='http://caniuse.com/stream'>another browser that supports getUserMedia</a>. Now using fallback video for facedetection.",
+				"no camera" : "No camera found. Using fallback video for facedetection."
+			};
+
+			document.addEventListener("headtrackrStatus", function(event) {
+				if (event.status in supportMessages) {
+					var messagep = document.getElementById('support-message');
+					messagep.innerHTML = supportMessages[event.status];
+				} else if (event.status in statusMessages) {
+					var messagep = document.getElementById('headtracker-message');
+					messagep.innerHTML = statusMessages[event.status];
+				}
+			}, true);
+
 			document.addEventListener('mousedown', onDocumentMouseDown, false)    
       
       function onDocumentMouseDown( event ) {
