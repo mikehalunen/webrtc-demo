@@ -17,7 +17,6 @@ html, body {
 #imgContainer {
 	height: 100%;
 	width: 100%;
-	border:solid 1px blue;
 	overflow: hidden;
 	text-align: center;
 	background-image: url('../../suv.jpg');

@@ -45,3 +45,13 @@ body {
 #headtrackerMessageDiv {
 	display: none;
 }
+
+#end {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		z-index: 1000;
+		height:40px;
+		width:40px;
+		color: #999999;
+}
